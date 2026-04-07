@@ -1,0 +1,33 @@
+# AI图像编辑模型依赖
+# 适用于InstructPix2Pix模型集成
+
+# 核心依赖
+torch>=2.1.0
+torchvision>=0.16.0
+diffusers>=0.25.0
+transformers>=4.36.0
+accelerate>=0.25.0
+
+# 图像处理
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# 数值计算
+numpy>=1.24.0
+
+# 工具库
+tqdm>=4.65.0
+safetensors>=0.4.0
+
+# 可选优化（推荐安装）
+xformers>=0.0.23; sys_platform == "linux"  # Linux only, 加速注意力计算
+
+# API服务（可选）
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+
+# 开发依赖（可选）
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
